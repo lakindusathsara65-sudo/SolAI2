@@ -1,0 +1,6 @@
+{
+  "name": "SolAI",
+  "description": "AI-powered garden designer. Generate layouts, identify plants from screenshots, and create visualizations of your dream garden.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
