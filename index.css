@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-surface: #F4F1EA;
+  --color-ink: #2D3027;
+  --color-line: #E2DFD6;
+  --color-accent: #9CAF88;
+  --color-highlight: #FAF9F6;
+  --color-terra: #E6B8A2;
+  --color-muted: #727866;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-surface text-ink;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  h1, h2, h3, .serif {
+    font-family: 'Georgia', serif;
+  }
+}
+
+@layer components {
+  .tag {
+    @apply text-[10px] uppercase tracking-[1px] text-muted border-b border-muted inline-block mb-2 font-sans;
+  }
+
+  .analysis-box {
+    @apply border border-dashed border-[#A8A492] rounded-sm p-5 text-center bg-highlight mb-5;
+  }
+
+  .plant-card {
+    @apply border border-line p-3 mb-3 rounded-[2px] bg-white transition-all hover:border-accent;
+  }
+}
